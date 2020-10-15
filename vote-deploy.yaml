@@ -13,8 +13,9 @@ spec:
         app: vote
     spec:
       containers:
-        image: training/voting-app:v1
-        name: vote
-        ports:
-          -
-            containerPort: 80
+        -
+          image: training/voting-app:v1
+          name: vote
+          ports:
+            -
+              containerPort: 80
